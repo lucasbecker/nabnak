@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NABNAK</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="boards">
+    <!-- Quadro de tarefas para fazer -->
+    <div class="board">
+      <h2>TO-DO</h2>
+      <div class="dropZone" id="todo">
+        <!-- Cartões de tarefas -->
+        <div class="card" draggable="true">
+          <div class="status todo"></div>
+          <div class="content">Está é uma tarefa em espera! (Experimente adicionar outras tarefas logo abaixo.)</div>
+        </div>
+      </div>
+    </div>
+    <!-- Quadro de tarefas sendo feitas -->
+    <div class="board">
+      <h2>DOING</h2>
+      <div class="dropZone" id="doing">
+        <div class="card" draggable="true">
+          <div class="status doing"></div>
+          <div class="content">Está é uma tarefa sendo feita! (Experimente arrasta-lá para alguma outra coluna.)</div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Quadro de tarefas já feitas -->
+    <div class="board">
+      <h2>DONE!</h2>
+      <div class="dropZone" id="done">
+        <div class="card" draggable="true">
+          <div class="status done"></div>
+          <div class="content">Está é uma tarefa concluída! (Experimente remove-la do quadro arrastando até a lixeira.)</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="task">
+      <h2><label for="task">ADD TASK</label></h2>
+      <form id="addTask" action="POST">
+        <input id="task" name="task" type="text" autocomplete="off">
+        <button type="submit"><img src="./icons/plus.svg" alt="Add task" /></button>
+      </form>
+    </div>
+    <div class="info">
+      <h1 class="logo">NAB<br/>NAK</h1>
+      <p class="slogan">a simple<br/>kanban board</p>
+    </div>
+    <div class="garbage">
+      <h2>Garbage</h2>
+      <div class="dropZone" id="garbage">
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./js/script.js" defer></script>
+</body>
+</html>

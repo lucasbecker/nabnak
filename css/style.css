@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+
+  background-color: #130f0d;
+  color: #fff;
+
+  width: 100vw;
+  min-height: 100vh;
+  padding: 30px 30px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  overflow-x: hidden;
+}
+
+.boards{
+  width: 100%;
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board{
+  width: 33%;
+  min-height: 100%;
+  margin: 0 15px;
+  background-color: #141316;
+  border: 1px solid #fd951f11;
+  border-radius: 5px;
+}
+
+#doing{
+  margin: 0 0;
+}
+
+.board h2{
+  text-align: center;
+  padding: 30px 15px 15px 15px;
+  color: #fd951fcc;
+}
+
+.dropZone{
+  padding: 15px;
+  width: 100%;
+  height: calc(100% - 80px);
+
+  transition: .2s;
+}
+
+.card{
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #1a1a1c;
+  box-shadow: 0 2px 2px -1px #FD951Fcc;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  word-wrap: break-word;
+
+  transition: .2s;
+}
+
+.card:hover{
+  cursor: move;
+}
+
+.status{
+  width: 10%;
+  height: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #fd951fcc;
+}
+
+.todo{
+  background-color: red;
+}
+
+.doing{
+  background-color: yellow;
+}
+
+.done{
+  background-color: green;
+}
+
+.highlight{
+  background-color: #df951f08;
+}
+
+.dragging{
+  cursor: move;
+  opacity: 0.3;
+}
+
+.over{
+  background-color: #4ccd3711;
+}
+
+.footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task{
+  width: 33%;
+  height: 100px;
+  margin: 30px 15px 0px 15px;
+  padding: 15px;
+  background-color: #141316;
+  border: 1px solid #fd951f11;
+  border-radius: 5px;
+}
+
+.task form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.task h2{
+  color: #fd951fcc;
+  text-align: center;
+  padding-bottom:5px;
+}
+
+.task input{
+  width: 80%;
+  height: 30px;
+  background-color: #130f0d;
+  border: 2px solid #fd951f11;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 15px;
+}
+
+.task input:focus, .task input:hover{
+  border-bottom: 3px solid #fd951fcc;
+}
+
+.task button{
+  background: none;
+  border: none;
+  width: 20%;
+  height: 30px;
+}
+.task button:hover{
+  cursor: pointer;
+}
+
+.task button img{
+  height: 30px;
+}
+
+.info{
+  width: 33%;
+  height: 100px;
+  margin:  30px 15px 0px 15px;
+
+  padding: 15px;
+  border: 5px solid #fd951fcc;
+  border-radius: 5px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo{
+  color: #fd951fcc;
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: .8em;
+  width: 130px;
+}
+
+.slogan{
+  margin-left: 15px;
+  color: #fd951fcc;
+  text-align: right;
+}
+
+.garbage{
+  width: 33%;
+  height: 100px;
+  margin:  30px 15px 0px 15px;
+  background-color: #141316;
+  border: 1px solid #fd951f11;
+  border-radius: 5px;
+  background-image: url('../icons/trash.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+}
+
+.garbage h2{
+  visibility: hidden;
+  height: 0;
+}
+
+.garbage .dropZone{
+  height: 100%;
+}
+
+@media all and (max-width: 600px){
+  /*
+  FAZER RESPONSIVIDADE MOBILE
+  .boards{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .board{
+    min-height: 30vh;
+    margin-bottom: 15px;
+  }
+  */
+}
