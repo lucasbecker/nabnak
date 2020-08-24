@@ -1,5 +1,5 @@
 # NABNAK
- Um simples quadro kanban. 
+> Um simples quadro kanban. 
 
 ## Overview
 Um simples quadro kanban desenvolvido apenas com HTML, CSS e JavaScript. Utilizando a API e os eventos de [**Drag and Drop**](https://developer.mozilla.org/pt-BR/docs/DragDrop/Drag_and_Drop) do HTML5, manipulando eles e adicionando tarefas ao quadro de forma dinâmica com Vanilla JS e estilizar a aparência com CSS3.
