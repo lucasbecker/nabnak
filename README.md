@@ -7,6 +7,7 @@ Um simples quadro kanban desenvolvido apenas com HTML, CSS e JavaScript. Utiliza
 Agradecimentos especiais à [Rocketseat](https://rocketseat.com.br/) que inspirou e auxiliou o desenvolvimento com seu [vídeo do YouTube](https://www.youtube.com/watch?v=6wn8hpUcEcM).
 
  ## Next Steps
+ - [ ] Alterar cursor ao mover card.
  - [ ] Tema escuro e claro.
  - [ ] Idioma em português e inglês.
  - [ ] LocalStorage das tarefas.
